@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.5,
     shadowRadius: 10,
     elevation: 14,
-    borderRadius: 8,
+    //borderRadius: 8,
     overflow: 'hidden',
     marginRight: 24,
   },

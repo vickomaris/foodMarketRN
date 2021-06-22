@@ -32,10 +32,5 @@ export default SignIn;
 const styles = StyleSheet.create({
   page: {flex: 1},
   container: {
-    backgroundColor: 'white',
-    paddingHorizontal: 24,
-    paddingVertical: 26,
-    marginTop: 24,
-    flex: 1,
-  },
+    backgroundColor: 'white', paddingHorizontal: 24, paddingVertical: 26, marginTop: 24, flex: 1, },
 });
