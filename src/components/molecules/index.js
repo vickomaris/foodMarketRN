@@ -5,6 +5,8 @@ import HomeTabSection from './HomeTabSection'
 import HomeProfile from './HomeProfile'
 import Rating from './Rating'
 import Counter from './Counter'
+import ItemListFood from './ItemListFood/index.js'
+import ItemValue from './itemValue/index.js'
 
 export {
    Header,
@@ -14,4 +16,6 @@ export {
    HomeProfile,
    Rating,
    Counter,
+   ItemListFood,
+   ItemValue,
 }

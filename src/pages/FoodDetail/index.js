@@ -1,14 +1,16 @@
-import React from 'react'
+import React from 'react';
 import {
    ImageBackground,
    StyleSheet,
    Text,
    TouchableOpacity,
    View,
-} from 'react-native'
-import {FoodDummy6, IcBackWhite} from '../../assets'
-import {Button, Rating, Counter} from '../../components'
-const FoodDetail = () => {
+} from 'react-native';
+import {FoodDummy6, IcBackWhite} from '../../assets';
+import {Button} from '../../components';
+import Counter from './../../components/molecules/Counter/index';
+import Rating from './../../components/molecules/Rating/index';
+const FoodDetail = ({navigation}) => {
    return (
       <View style={styles.page}>
          <ImageBackground source={FoodDummy6} style={styles.cover}>
@@ -39,15 +41,18 @@ const FoodDetail = () => {
                   <Text style={styles.priceTotal}>IDR 12.289.000</Text>
                </View>
                <View style={styles.button}>
-                  <Button text="Order Now" />
+                  <Button
+                     text="Order Now"
+                     onPress={() => navigation.navigate('OrderSummary')}
+                  />
                </View>
             </View>
          </View>
       </View>
-   )
-}
+   );
+};
 
-export default FoodDetail
+export default FoodDetail;
 
 const styles = StyleSheet.create({
    page: {flex: 1},
@@ -92,4 +97,4 @@ const styles = StyleSheet.create({
    button: {width: 163},
    labelTotal: {fontSize: 13, fontFamily: 'Poppins-Regular', color: '#8D92A3'},
    priceTotal: {fontSize: 18, fontFamily: 'Poppins-Regular', color: '#020202'},
-})
+});

@@ -3,7 +3,7 @@ module.exports = {
    plugins: ['prettier'],
    extends: '@react-native-community',
    rules: {'prettier/prettier': ['error', {endOfLine: 'auto'}]},
-   //bisa juga ditambahkan 0 di rules nya
+   //bisa juga ditambahkan pretier : 0 di rules nya
    'prettier/prettier': [
       'error',
       {
