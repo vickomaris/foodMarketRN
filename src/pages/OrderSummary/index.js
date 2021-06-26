@@ -1,10 +1,12 @@
-import React from 'react'
-import {StyleSheet, Text, View} from 'react-native'
-import {FoodDummy1} from '../../assets/index.js'
-import Header from './../../components/molecules/Header/index'
-import ItemListFood from './../../components/molecules/ItemListFood/index'
-import ItemValue from './../../components/molecules/ItemValue/index'
-import Button from './../../components/atoms/Button/index'
+import React from 'react';
+import {StyleSheet, Text, View} from 'react-native';
+import {FoodDummy1} from '../../assets/index.js';
+import Header from './../../components/molecules/Header/index';
+import ItemListFood from './../../components/molecules/ItemListFood/index';
+import ItemValue from './../../components/molecules/ItemValue/index';
+import Button from './../../components/atoms/Button/index';
+
+//INI ADALAH HALAMAN PAYMENT
 
 const OrderSummary = ({navigation}) => {
    return (
@@ -16,7 +18,13 @@ const OrderSummary = ({navigation}) => {
          />
          <View style={styles.content}>
             <Text style={styles.label}>Item Ordered</Text>
-            <ItemListFood image={FoodDummy1} items={14} />
+            <ItemListFood
+               type="order-summary"
+               name="Sop Bumil"
+               price="380.000"
+               image={FoodDummy1}
+               items={14}
+            />
             <Text style={styles.label}>Details Transaction</Text>
             <ItemValue label="Cherry Healthy" value="IDR 18.390.000" />
             <ItemValue label="Driver" value="IDR 50.000" />
@@ -43,10 +51,10 @@ const OrderSummary = ({navigation}) => {
             />
          </View>
       </View>
-   )
-}
+   );
+};
 
-export default OrderSummary
+export default OrderSummary;
 
 const styles = StyleSheet.create({
    content: {
@@ -62,4 +70,4 @@ const styles = StyleSheet.create({
       paddingBottom: 8,
    },
    button: {paddingHorizontal: 24, marginTop: 24},
-})
+});
