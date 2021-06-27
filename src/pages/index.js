@@ -1,14 +1,15 @@
-import SplashScreen from './SplashScreen'
-import SignIn from './SignIn'
-import SignUp from './SignUp'
-import SignUpAddress from './SignUpAddress'
-import SuccessSignUp from './SuccessSignUp'
-import Home from './Home'
-import Order from './Order'
-import Profile from './Profile'
-import FoodDetail from './FoodDetail'
-import OrderSummary from './OrderSummary/index.js'
-import SuccessOrder from './SuccessOrder/index.js'
+import SplashScreen from './SplashScreen';
+import SignIn from './SignIn';
+import SignUp from './SignUp';
+import SignUpAddress from './SignUpAddress';
+import SuccessSignUp from './SuccessSignUp';
+import Home from './Home';
+import Order from './Order';
+import Profile from './Profile';
+import FoodDetail from './FoodDetail';
+import OrderSummary from './OrderSummary/index.js';
+import SuccessOrder from './SuccessOrder/index.js';
+import OrderDetail from './OrderDetail/index.js';
 
 export {
    SplashScreen,
@@ -22,4 +23,5 @@ export {
    FoodDetail,
    OrderSummary,
    SuccessOrder,
-}
+   OrderDetail,
+};

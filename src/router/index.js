@@ -1,11 +1,12 @@
-import React, {useEffect} from 'react'
-import {createStackNavigator} from '@react-navigation/stack'
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
+import React, {useEffect} from 'react';
+import {createStackNavigator} from '@react-navigation/stack';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import {
    FoodDetail,
    Home,
    Order,
+   OrderDetail,
    OrderSummary,
    Profile,
    SignIn,
@@ -14,11 +15,11 @@ import {
    SplashScreen,
    SuccessOrder,
    SuccessSignUp,
-} from '../pages'
-import {BottomNavigator} from '../components'
+} from '../pages';
+import {BottomNavigator} from '../components';
 
-const Stack = createStackNavigator()
-const Tab = createBottomTabNavigator()
+const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
 const MainApp = () => {
    return (
@@ -27,8 +28,8 @@ const MainApp = () => {
          <Tab.Screen name="Order" component={Order} />
          <Tab.Screen name="Profile" component={Profile} />
       </Tab.Navigator>
-   )
-}
+   );
+};
 
 const Router = () => {
    return (
@@ -78,8 +79,13 @@ const Router = () => {
             component={SuccessOrder}
             options={{headerShown: false}}
          />
+         <Stack.Screen
+            name="OrderDetail"
+            component={OrderDetail}
+            options={{headerShown: false}}
+         />
       </Stack.Navigator>
-   )
-}
+   );
+};
 
-export default Router
+export default Router;

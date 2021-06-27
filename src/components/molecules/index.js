@@ -9,6 +9,8 @@ import ItemListFood from './ItemListFood/index.js';
 import ItemValue from './ItemValue/index.js';
 import EmptyOrder from './EmptyOrder/index.js';
 import OrderTabSection from './OrderTabSection/index.js';
+import ProfileTabSection from './ProfileTabSection';
+import ItemListMenu from './ItemListMenu/index.js';
 
 export {
    Header,
@@ -22,4 +24,6 @@ export {
    ItemValue,
    EmptyOrder,
    OrderTabSection,
+   ProfileTabSection,
+   ItemListMenu,
 };
